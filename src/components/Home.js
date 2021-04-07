@@ -1,12 +1,20 @@
-import React from "react"
-import "../App.css"
+import React from "react";
+import "../App.css";
+import { Input } from "antd";
+import ElectronicsPage from "./ElectronicsPage";
+const { Search } = Input;
 
-function Home(){
-    return(
-        <div className="home-container">
-            <h1>Home</h1>
-        </div>
-    )
+
+const Home=() =>{
+    const onSearch=()=>{
+        alert("here")
+    }
+  return (
+    <div className="home-container">
+      <Search placeholder="Search for products" onSearch={onSearch} enterButton />
+      <ElectronicsPage/>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
