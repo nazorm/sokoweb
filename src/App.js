@@ -41,7 +41,7 @@ function App() {
             Target
             <br />
             <span className="head-address">
-              Cham Towers,Plot 12 Nkrumah Rd, Kampala, Ug
+              Cham Towers, Plot 12 Nkrumah Rd, Kampala, Ug
             </span>
           </p>
         </div>
@@ -90,7 +90,7 @@ function App() {
         <p className="store-details">STORE DETAILS</p>
         <h3 className="footer-target">Target</h3>
         <p className="footer-address">
-          Cham Towers,Plot 12 Nkrumah Rd, Kampala, Ug
+          Cham Towers, Plot 12 Nkrumah Rd, Kampala, Ug
         </p>
         <button className="chat-btn">
           <img src={chatIcon} className="chat-icon" alt="chat" />
