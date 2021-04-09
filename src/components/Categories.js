@@ -1,4 +1,5 @@
 import React from "react";
+import arrow from "./assets/right-arrow.svg"
 
 const Categories = () => {
   return (
@@ -11,7 +12,11 @@ const Categories = () => {
         <li className="category">Home(24)</li>
         <li className="category">Kids(9)</li>
       </ul>
+      <div className="category-cta">
       <p className="all-categories">View all categories</p>
+      <img src={arrow} alt="arrow" className="arrow"/>
+      </div>
+     
     </div>
   );
 };
