@@ -1,19 +1,22 @@
 import React from "react"
-import ElectronicsPage from "./ElectronicsPage"
 
 const ElectronicsCard=(props)=>{
     const electronicProduct = props.product.map((item)=>{
         return(
-            <div key={item.id}>
-                <img src={item.img} className="product-image" alt="product" height="100px"/>
+            <div key={item.id} className="product-card">
+                <img src={item.img} className="product-image" alt="product" height="80px"/>
+                <div className="product-info">
                 <p className="product-name">{item.name}</p>
                 <p className="product-price">{item.price}</p>
                 <p className="old-price">{item.oldprice? item.oldprice : ""}</p>
+                </div>
+                
+                <button className="add-btn">+ Add</button>
             </div>
         )
     })
     return(
-        <div>
+        <div className="product-container">
 {electronicProduct}
         </div>
     )
