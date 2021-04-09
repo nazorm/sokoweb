@@ -12,7 +12,7 @@ const Products = [
         img : chair,
         name : "Norbury Scandinavian Wood Leg Ottoman",
         price: "UGX 118,400",
-        oldprice : "UGX148,000",
+        oldprice : "UGX 148,000",
         id:2
     },
     {
