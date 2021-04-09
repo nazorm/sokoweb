@@ -10,9 +10,9 @@ useEffect(()=>{
 },[])
   return (
     <div className="electronics-container">
-      <header className="electronics-header">
-        <h3 className="electronics-name">Electronics</h3>
-        <h3 className="electronics-count">12</h3>
+      <header className="categorypage-header">
+        <h3 className="categorypage-name">Electronics</h3>
+        <h3 className="categoryproduct-count">12</h3>
       </header>
       <ElectronicsCard
       product = {electronicProduct}
