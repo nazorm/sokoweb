@@ -1,5 +1,6 @@
 import React from "react";
-import arrow from "./assets/right-arrow.svg"
+import arrow from "../assets/right-arrow.svg"
+import "./styles.css";
 
 const Categories = () => {
   return (

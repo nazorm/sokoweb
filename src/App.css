@@ -94,143 +94,30 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
-.home-container {
-  width: 85%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 0;
-  position: relative;
-  align-items: start;
-}
-.line {
-  display: block;
-  width: 100%;
-  border: 0.2px solid rgba(0, 0, 0, 0.2);
-}
-.search-bar {
-  position: absolute;
-  top: -3.5%;
-  left: 24.5%;
-  width: 51%;
-}
-.electronics-container {
-  margin: 0 auto;
-  padding: 2% 2% 5%;
-  border-left: 0.2px solid rgba(0, 0, 0, 0.2);
-  border-right: 0.2px solid rgba(0, 0, 0, 0.2);
-}
-.bag-container {
-  padding: 2% 0 0 5%;
-  text-align: center;
-}
-.emptycart-icon {
-  margin: 8% 0 5%;
-}
-.categorypage-header,
-.bag-header {
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-}
-.bag-count {
-  margin-left: 8px;
-}
-.categoryproduct-count,
-.bag-count {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  background-color: rgba(3, 42, 214, 0.829);
-  padding: 1px 5px;
-  border-radius: 5px;
-  font-size: 12px;
-  font-weight: 500;
-}
-.product-card {
-  display: grid;
-  grid-template-columns: 100px 2fr 80px;
-  align-items: center;
-  margin: 0;
-}
 
-.add-btn {
-  border-radius: 5px;
-  padding: 0 10px;
-  background-color: transparent;
-  border: 2px solid rgba(3, 42, 214, 0.829);
-  color: rgba(3, 42, 214, 0.829);
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-}
-
-.product-name,
-.categorypage-name,
-.bagheader-name,
-.product-price,
-.old-price,
 .head-address,
 .footer-address,
-.category,
-.intronav-item,
-.start-shopping,
-.emptycart-text {
+.intronav-item{
   font-family: "Roboto", sans-serif;
   color: #36454f;
   font-weight: 700;
   font-size: 15px;
   margin: 0;
 }
-.product-price,
-.old-price,
 .head-address,
 .footer-address,
-.category,
 .intronav-item,
 .start-shopping {
   color: grey;
   font-size: 14px;
   font-weight: 500;
 }
-.old-price {
-  text-decoration: line-through;
-}
-.categories-container,
-.bag-container {
-  padding-top: 2%;
-  width: 25%;
-}
 
-.category {
-  list-style: none;
-  margin: 10px 0;
-  padding: 5px 0;
-}
-.category:hover {
-  cursor: pointer;
-  color: rgba(3, 42, 214, 0.829);
-  background: linear-gradient(to right, white, rgb(185, 185, 223));
-  border-right: 3px solid rgba(3, 42, 214, 0.829);
-}
 
-.category-cta {
-  display: flex;
-  width: 60%;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  color: rgba(3, 42, 214, 0.829);
-}
-.category-cta:hover,
-.add-btn:hover,
+
 .intronav-item:hover {
   cursor: pointer;
   opacity: 0.5;
-}
-.arrow {
-  width: 10px;
-}
-.all-categories {
-  margin: 0;
 }
 .chat-btn {
   margin: 1.5% 0;

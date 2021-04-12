@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "./styles.css";
 import { Input } from "antd";
 import ElectronicsPage from "./ElectronicsPage";
 import Categories from "./Categories";
@@ -11,6 +11,8 @@ const Home = () => {
     alert("here");
   };
   return (
+    <section>
+       <span className="line"></span>
     <div className="home-container">
       <Search
         className="search-bar"
@@ -22,6 +24,7 @@ const Home = () => {
       <ElectronicsPage />
       <Bag />
     </div>
+    </section>
   );
 };
 

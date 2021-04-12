@@ -1,5 +1,6 @@
 import React from "react";
-import sadFace from "./assets/sad-face.svg";
+import { RiEmotionUnhappyLine } from 'react-icons/ri';
+import "./styles.css";
 
 const Bag = () => {
   return (
@@ -9,12 +10,7 @@ const Bag = () => {
         <h3 className="bag-count">0</h3>
       </header>
       <section className="emptycart">
-        <img
-          src={sadFace}
-          className="emptycart-icon"
-          alt="emptycart-icon"
-          height="100px"
-        />
+        <RiEmotionUnhappyLine className="emptycart-icon"/>
         <p className="emptycart-text">
           It's empty here
           <br />
