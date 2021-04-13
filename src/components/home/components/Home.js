@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { Input } from "antd";
+import Footer from "../../Footer"
 import ElectronicsPage from "./ElectronicsPage";
 import Categories from "./Categories";
 import Bag from "./Bag";
@@ -11,7 +12,7 @@ const Home = () => {
     alert("here");
   };
   return (
-    <section>
+    <section className="home-section">
        <span className="line"></span>
     <div className="home-container">
       <Search
@@ -24,6 +25,7 @@ const Home = () => {
       <ElectronicsPage />
       <Bag />
     </div>
+    <Footer/>
     </section>
   );
 };

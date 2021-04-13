@@ -6,12 +6,14 @@ const ElectronicsCard = (props) => {
   const electronicProduct = props.product.map((item) => {
     return (
       <Link to="/productdescription" key={item.id} className="product-card">
+        <div className="productimage-container">
         <img
           src={item.img}
           className="product-image"
           alt="product"
           height="80px"
         />
+         </div>
         <div className="product-info">
           <p className="product-name">{item.name}</p>
           <p className="product-price">{item.price}</p>

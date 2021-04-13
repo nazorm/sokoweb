@@ -14,7 +14,8 @@ useEffect(()=>{
       <header className="categorypage-header">
         <h3 className="categorypage-name">Electronics</h3>
         <h3 className="categoryproduct-count">12</h3>
-      </header>
+      </header> 
+      <p className="product-discout"> -20%</p>
       <ElectronicsCard
       product = {electronicProduct}
       />
