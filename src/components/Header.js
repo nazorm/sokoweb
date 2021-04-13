@@ -1,5 +1,5 @@
 import { Header } from "antd/lib/layout/layout";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../App";
 import shoppingIcon from "./assets/cart.svg";
@@ -8,6 +8,24 @@ import whiteCart from "./assets/white-cart.svg";
 import userIcon from "./assets/user-icon.svg";
 
 const Head = () => {
+  const [bagClicked, setBagClicked] = useState(false);
+  const [accountClicked, setAccountClicked] = useState(false);
+  const handleBagClicked = () => {
+    if (bagClicked) {
+      setBagClicked(false);
+    } else {
+      setBagClicked(true);
+      setAccountClicked(false);
+    }
+  };
+  const handleAccountClicked = () => {
+    if (accountClicked) {
+      setAccountClicked(false);
+    } else {
+      setAccountClicked(true);
+      setBagClicked(false);
+    }
+  };
   return (
     <div>
       <header className="header">
@@ -44,20 +62,34 @@ const Head = () => {
         </div>
         <nav className="headintro-nav">
           <ul className="intro-nav">
-            <Link to="/bag">
-              <li className="intronav-item">
-                <img
-                  src={shoppingIcon}
-                  alt="nav-icon"
-                  className="nav-shoppingicon"
-                />
-                Bag
-              </li>
-            </Link>
-            <li className="intronav-item">
-              <img src={userIcon} alt="nav-icon" className="nav-usericon" />
-              Account
-            </li>
+            <div
+              className={bagClicked ? "bag-clicked" : "bag-unclicked"}
+              onClick={handleBagClicked}
+            >
+              <Link to="/bag">
+                <li className="intronav-item">
+                  <img
+                    src={shoppingIcon}
+                    alt="nav-icon"
+                    className="nav-shoppingicon"
+                  />
+                  Bag
+                </li>
+              </Link>
+            </div>
+            <div
+              className={
+                accountClicked ? "account-clicked" : "account-unclicked"
+              }
+              onClick={handleAccountClicked}
+            >
+              <Link to="/account">
+                <li className="intronav-item">
+                  <img src={userIcon} alt="nav-icon" className="nav-usericon" />
+                  Account
+                </li>
+              </Link>
+            </div>
           </ul>
         </nav>
       </section>

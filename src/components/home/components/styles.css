@@ -136,7 +136,7 @@
   margin: 10px 0;
   padding: 5px 0;
 }
-.category:hover {
+.category:hover{
   cursor: pointer;
   color: rgba(3, 42, 214, 0.829);
   background: linear-gradient(to right, white, rgb(185, 185, 223));

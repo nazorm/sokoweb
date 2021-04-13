@@ -62,12 +62,22 @@
 }
 .intronav-item {
   list-style: none;
-  margin: 0 10px;
 }
 .nav-shoppingicon,
 .nav-usericon {
   width: 15px;
   margin: 0 10px;
+}
+.bag-clicked,
+.account-clicked {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(195, 202, 235, 0.829);
+}
+.bag-uncliked,
+.account-unclicked {
+  padding: 5px;
+  background-color: white;
 }
 .features {
   width: 100%;
