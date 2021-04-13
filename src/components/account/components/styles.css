@@ -1,0 +1,175 @@
+@import "antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,600&family=Roboto:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.account-header {
+  width: 85%;
+  margin: 0 auto 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.account-number,
+.allorders-heading h3,
+.logout-btn,
+.order-name,
+.order-no,
+.order-price,
+.order-shipped,
+.order-delivered {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  color: rgb(88, 88, 88);
+}
+.logout-btn,
+.filter-btn {
+  padding: 5px 15px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  background: white;
+}
+.account-info {
+  width: 85%;
+  height: 450px;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: 0.2px solid grey;
+  display: flex;
+}
+.order-nav {
+  width: 20%;
+  text-align: center;
+  border-right: 0.2px solid grey;
+  padding-top: 20px;
+}
+.order-nav ul li {
+  list-style: none;
+  padding: 2px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.filter-btn {
+  display: flex;
+  align-items: center;
+}
+.order-nav ul li span,
+.filter-btn span,
+.no-of-items,
+.order-date {
+  color: grey;
+  margin: 0;
+  font-family: "cabin", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+.account-icon {
+  width: 20px;
+  height: 20px;
+  color: grey;
+  margin-right: 5px;
+}
+.order-nav ul li:hover {
+  cursor: pointer;
+  color: rgba(3, 42, 214, 0.829);
+  background: linear-gradient(to right, white, rgb(185, 185, 223));
+  border-right: 3px solid rgba(3, 42, 214, 0.829);
+}
+.all-orders {
+  width: 75%;
+  margin: 0 3% 0 6%;
+  padding-top: 20px;
+}
+.allorders-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.orders {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.order-card {
+  border: 0.2px solid grey;
+  width: 350px;
+  padding: 20px 15px 5px;
+  border-radius: 5px;
+}
+.order {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.ordercard-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+}
+.account-home {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  margin-right: 12px;
+}
+.accounthome-icon {
+  width: 25px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+.order-details {
+  display: flex;
+  width: 100%;
+  margin: 4% 0;
+  justify-content: space-between;
+}
+.order-price {
+  text-align: end;
+}
+.order-no,
+.order-price,
+.order-shipped,
+.order-delivered {
+  font-size: 15px;
+}
+.order-shipped {
+  color: orange;
+  margin: 0;
+}
+.order-delivered {
+  color: rgba(3, 42, 214, 0.829);
+  margin: 0;
+}
+.deliveredstatus-signifier {
+  background-color: rgba(3, 42, 214, 0.829);
+}
+.shippedstatus-signifier {
+  background-color: orange;
+}
+.shippedstatus-signifier,
+.deliveredstatus-signifier {
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+  border: transparent;
+  border-radius: 50%;
+}
+.status {
+  display: flex;
+  align-items: center;
+}
