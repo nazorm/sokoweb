@@ -1,14 +1,14 @@
-import React from "react"
+import React from "react";
 import "../App.css";
 import protection from "./assets/protection.svg";
 import fastDelivery from "./assets/fast-delivery.svg";
 import customerService from "./assets/customer-service.svg";
 import chatIcon from "./assets/chat-icon.svg";
 
-const Footer =()=>{
-    return(
+const Footer = () => {
+  return (
     <div>
-        <section className="features">
+      <section className="features">
         <div className="feature">
           <img
             src={fastDelivery}
@@ -42,6 +42,6 @@ const Footer =()=>{
         </button>
       </footer>
     </div>
-    )
-}
-export default Footer
+  );
+};
+export default Footer;

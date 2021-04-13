@@ -25,7 +25,7 @@
 }
 .head-nav {
   width: 85%;
-  margin: 3% auto;
+  margin: 3% auto 1%;
   display: flex;
   justify-content: space-between;
 }
@@ -97,7 +97,7 @@
 
 .head-address,
 .footer-address,
-.intronav-item{
+.intronav-item {
   font-family: "Roboto", sans-serif;
   color: #36454f;
   font-weight: 700;
@@ -112,8 +112,6 @@
   font-size: 14px;
   font-weight: 500;
 }
-
-
 
 .intronav-item:hover {
   cursor: pointer;
