@@ -20,10 +20,14 @@ button:hover {
 .allorders-heading h3,
 .logout-btn,
 .order-name,
+.customer-name,
 .order-no,
 .order-price,
 .order-shipped,
-.order-delivered {
+.order-delivered,
+.customer-phone,
+.edit,
+.delete {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -65,12 +69,14 @@ button:hover {
 .order-nav ul li span,
 .filter-btn span,
 .no-of-items,
-.order-date {
+.order-date,
+.customer-address {
   color: grey;
   margin: 0;
   font-family: "cabin", sans-serif;
   font-weight: 700;
   font-size: 15px;
+  line-height: 1.2;
 }
 .account-icon {
   width: 20px;
@@ -84,10 +90,12 @@ button:hover {
   background: linear-gradient(to right, white, rgb(185, 185, 223));
   border-right: 3px solid rgba(3, 42, 214, 0.829);
 }
-.all-orders {
+.allorders-display,
+.display-address {
   width: 75%;
   margin: 0 3% 0 6%;
   padding-top: 20px;
+  display: block;
 }
 .allorders-heading {
   display: flex;
@@ -95,16 +103,29 @@ button:hover {
   width: 100%;
   margin-bottom: 5%;
 }
-.orders {
+.orders,
+.addresses {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.order-card {
+
+.noallorders-display,
+.nodisplay-address {
+  display: none;
+}
+.addresses {
+  width: 75%;
+}
+.order-card,
+.address-card {
   border: 0.2px solid grey;
   width: 350px;
   padding: 20px 15px 5px;
   border-radius: 5px;
+}
+.address-card {
+  width: 270px;
 }
 .order {
   width: 100%;
@@ -132,10 +153,11 @@ button:hover {
   top: 20%;
   left: 20%;
 }
-.order-details {
+.order-details,
+.customer-phone {
   display: flex;
   width: 100%;
-  margin: 4% 0;
+  margin: 4% 0 5%;
   justify-content: space-between;
 }
 .order-price {
@@ -144,7 +166,8 @@ button:hover {
 .order-no,
 .order-price,
 .order-shipped,
-.order-delivered {
+.order-delivered,
+.customer-phone {
   font-size: 15px;
 }
 .order-shipped {
@@ -172,4 +195,15 @@ button:hover {
 .status {
   display: flex;
   align-items: center;
+}
+.address-card {
+  text-align: start;
+}
+.add-address {
+  margin: 25% auto;
+  text-align: center;
+}
+.delete {
+  margin-left: 18px;
+  color: coral;
 }
