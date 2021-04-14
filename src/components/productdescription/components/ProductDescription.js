@@ -2,7 +2,6 @@ import React from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import Footer from "../../Footer";
-import whiteChair from "../../assets/white-chair.jpg";
 import chair from "../../assets/chair.png";
 import "./styles.css";
 

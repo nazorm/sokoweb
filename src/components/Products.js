@@ -1,8 +1,4 @@
 import chair from "./assets/chair.png";
-import minimalistChair from "./assets/minimalist-chair.jpg";
-import whiteChair from "./assets/white-chair.jpg";
-import lamp from "./assets/lamp.jpg";
-import purse from "./assets/purse.jpg";
 
 const Products = [
   {
