@@ -57,7 +57,7 @@ button:hover {
 }
 .order-nav ul li {
   list-style: none;
-  padding: 2px 10px;
+  padding: 5px 10px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
